@@ -29,8 +29,8 @@ func (s *GreeterService) SayHello(ctx context.Context, in *v1.HelloRequest) (*v1
 }
 
 const tpl = `
-<a href='/build' >build</a> <br>
-<a href='/cat'>cat</a>
+<a href='./build' >build</a> <br>
+<a href='./cat'>cat</a>
 `
 
 func (s *GreeterService) Index(ctx *gin.Context) {
