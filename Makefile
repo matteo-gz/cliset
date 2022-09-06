@@ -79,3 +79,6 @@ help:
 	{ lastLine = $$0 }' $(MAKEFILE_LIST)
 
 .DEFAULT_GOAL := help
+
+bu:
+	go build -o cliset cmd/cliset/main.go cmd/cliset/wire_gen.go
